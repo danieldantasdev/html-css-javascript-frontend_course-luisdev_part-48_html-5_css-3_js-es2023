@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padrão RSCSS - Padrão de escrita CSS</title>
+</head>
+<body>
+    <style>
+        .ld-button{
+            border: 1px solid black;
+            padding: 10px 20px 10px 20px;
+            background-color: white;
+            border-radius: 3px;
+        }
+
+        .ld-button.-danger{
+            color: red;
+            border-color: red;
+        }
+
+        .ld-button.-warning{
+            color: rgb(255, 238, 0);
+            border-color: rgb(255, 238, 0);
+        }
+
+        /* 
+            ld-button 
+            variações: -danger, -warning
+        */
+    </style>
+
+    <button class="ld-button">Luis Dev</button>
+
+    <!-- 
+        1) usar - pra separar nomes
+        2) imagine tudo como um componente ou object
+        3) use a especificidade direta para qualquer classe
+        4) utilize - para ditar variações
+        5) use o _ para ditar classes com !important 
+    -->
+</body>
+</html>
